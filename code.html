@@ -87,10 +87,10 @@
                 <div class="absolute inset-0 bg-sand/70 lg:bg-gradient-to-r lg:from-sand lg:via-sand/90 lg:to-transparent"></div>
             </div>
             
-            <div class="relative z-10 max-w-7xl mx-auto px-6 w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div class="relative z-10 max-w-7xl mx-auto px-6 w-full flex items-center">
                 
-                <!-- Contenido Izquierdo -->
-                <div class="lg:col-span-6 space-y-8 fade-in-up">
+                <!-- Contenido Principal -->
+                <div class="max-w-2xl space-y-8 fade-in-up">
                     <span class="text-xs uppercase tracking-[0.3em] text-blush-500 font-medium">Salón Boutique</span>
                     <h1 class="text-5xl lg:text-7xl font-serif font-light leading-[1.1]">
                         Eleva la <br/><i class="text-blush-400">belleza natural</i> <br/>de tu cabello.
@@ -106,24 +106,6 @@
                     </div>
                 </div>
 
-                <!-- Formulario HubSpot (Derecha) -->
-                <div class="lg:col-span-5 lg:col-start-8" id="appointment-form">
-                    <div class="bg-white/90 backdrop-blur-xl p-8 lg:p-12 rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.05)] border border-blush-50 relative overflow-hidden">
-                        <!-- Pequeño adorno sutil en el borde -->
-                        <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blush-200 to-blush-400"></div>
-
-                        <div class="mb-8 text-center space-y-2">
-                            <h2 class="text-3xl font-serif text-charcoal">Reserva tu momento</h2>
-                            <p class="text-sm text-muted font-light">Déjanos tus datos y nos pondremos en contacto para tu evaluación capilar.</p>
-                        </div>
-                        
-                        <!-- HubSpot Form Embed -->
-                        <div class="min-h-[250px] flex flex-col justify-center w-full">
-                            <script src="https://js.hsforms.net/forms/embed/51270656.js" defer></script>
-                            <div class="hs-form-frame w-full" data-region="na1" data-form-id="d0ba69ea-2ae0-43c5-b188-24c9ca9ef42c" data-portal-id="51270656"></div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </section>
 
@@ -160,19 +142,26 @@
             </div>
         </section>
 
-        <!-- Sección Final CTA -->
-        <section id="benefits" class="py-32 bg-blush-200/50">
-            <div class="max-w-3xl mx-auto px-6 text-center space-y-10">
-                <h2 class="text-4xl lg:text-6xl font-serif text-charcoal leading-tight">
-                    El lujo de un cabello <br/><i class="text-blush-500">auténticamente sano.</i>
-                </h2>
-                <p class="text-charcoal/70 font-light text-lg">
-                    Es tiempo de regalarte el cuidado que mereces. Transforma la salud de tu cabello desde hoy.
-                </p>
-                <div class="pt-6">
-                     <a href="#appointment-form" class="inline-block bg-white text-charcoal px-10 py-4 text-xs uppercase tracking-[0.2em] font-medium shadow-sm hover:bg-charcoal hover:text-white transition-colors duration-500 rounded-sm">
-                        Agenda tu consulta
-                    </a>
+        <!-- Sección Final CTA / Formulario -->
+        <section id="appointment-form" class="py-32 bg-blush-200/50 relative">
+            <div id="benefits" class="absolute -top-20"></div>
+            <div class="max-w-4xl mx-auto px-6 space-y-16">
+                <div class="text-center space-y-10">
+                    <h2 class="text-4xl lg:text-6xl font-serif text-charcoal leading-tight">
+                        El lujo de un cabello <br/><i class="text-blush-500">auténticamente sano.</i>
+                    </h2>
+                    <p class="text-charcoal/70 font-light text-lg">
+                        Es tiempo de regalarte el cuidado que mereces. Déjanos tus datos a continuación y nos pondremos en contacto contigo.
+                    </p>
+                </div>
+                
+                <!-- Google Form Embed -->
+                <div class="bg-white/90 backdrop-blur-xl p-4 lg:p-8 rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.05)] border border-blush-50 relative overflow-hidden">
+                    <!-- Pequeño adorno sutil en el borde -->
+                    <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blush-200 to-blush-400"></div>
+                    <div class="w-full flex justify-center -mt-8">
+                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf82ogaccsdGDzmXhFt8k7uOTQOT2N78P9uGOe-_PLns-34vg/viewform?embedded=true" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0" style="background: transparent;">Cargando…</iframe>
+                    </div>
                 </div>
             </div>
         </section>
